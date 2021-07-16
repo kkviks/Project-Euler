@@ -22,7 +22,7 @@ int main()
     {
         for (int j = 999; j >= i; j--)
         {
-            if (isPelindrome(i * j))
+            if (i * j % 11 == 0 and isPelindrome(i * j))
             {
                 ans = max(ans, i * j);
             }
